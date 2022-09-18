@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;300 & display=swap');
+* {
+  box-sizing: border-box;
+  background-color: #179CBC;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+h1.titulo {
+  margin: 50px auto 150px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+h1#msg-final {
+  text-align: center;
+  color: #47C0A7; /*#065893 #FBE4A3 */
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.acierto {
+  animation: zoomInOut 1s ease;
+  font-weight: bolder;
+  font-size: 80px;
+}
+.rojo {
+  color: red;
+  font-size: 35px;
+}
+.verde {
+  color: lightgreen;
+  font-size: 35px;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px auto; 
+  
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+  
+}
+.col {
+  border: #179CBC;
+  text-align: left;
+  margin: 5px auto auto 30px;
+}
+
+#turnos h3 {
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+div span {
+  margin: 0 0 0 0;
+   color: white;
+   font-weight: lighter;
+}
+.letra:disabled {
+  color: royalblue;
+
+}
+picture {
+  position: relative;
+  margin: 30px 0 0 0;
+}
+picture img {
+  position: absolute;
+  top: -350px;
+  left: -200px;
+  height: 380px;
+  border-radius: 23px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+  font-size: 80px;
+}
+.encuadre {
+  margin: 30px 0 0 0;
+  border: 2px dashed;
+  padding: 3px 2px 2px 1px;
+  text-align: left;
+}
+.subtitulo{
+  margin: 10px 0 0 20PX;
+  font-weight: bolder;
+  color: royalblue;
+  text-align: right;
+  font-size: 25px;
+}
+.boton-estilo{
+  margin: 5px 0px 0px 130px;
+  border-radius: 8px;
+  color: royalblue;
+  border-color: white;
+  width: 150px;
+  height: 80px;
+  font-weight: lighter;
+  font-size: 25PX;
+  justify-content: flex-end;
+
+}
+.teclado{
+  margin: 1px 0px 0px 0px;
+  text-align: center;
+}
+.palabra{
+  font-size: 50px;
+}
